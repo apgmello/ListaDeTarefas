@@ -14,7 +14,7 @@ body {
 }
 
 body header {
-    background-color: #13301e;
+    background-color: #133231;
     min-height: 10vh;
     width: 100%;
     display: flex;
@@ -24,7 +24,7 @@ body header {
 }
 
 body main {
-    background-color: #13301e;
+    background-color: #133231;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ body main {
 }
 
 body footer {
-    background-color: #13301e;
+    background-color: #133231;
     min-height: 10vh;
     width: 100%;
     display: flex;
@@ -46,16 +46,30 @@ body footer {
     display:flex;
 }
 
-button {
+.button1 {
+    color: #000005;
     margin-left: 5px;
-    background-color: #e7e7d6;
+    background-color: #d8cbbe;
+    border-style: none;
     font-weight: bold;
+    border-radius: 8px;
     width: 100px;
     height: 25px;
 }
+.button2 {
+    color: #000005;
+    margin-left: 5px;
+    background-color: #d8cbbe;
+    border-style: none;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 200px;
+    height: 25px;
+    
+}
 
 h1 {
-    color: #e7e7d6;
+    color: #4b4b53;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -63,10 +77,13 @@ h1 {
 }
 
 input {
-    background-color: #e7e7d6;
+    background-color: #d8cbbe;
     font-weight: bold;
+    border-radius: 8px;
+    border-style: none;
     height: 25px;
     width: 100%;
+    padding-left: 5px;
 }
 
 label {
@@ -79,7 +96,7 @@ ul {
 }
 
 li {
-    color: #e7e7d6;
+    color: #000005;
     font-weight: bold;
     height: 25px;
     white-space: nowrap;
@@ -87,7 +104,9 @@ li {
 }
 
 .content {
-    border-style: solid;
+    border-style:none;
+    border-radius: 10px;
+    background-color: #c299aa;
     padding: 10px;
 
 }

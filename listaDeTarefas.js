@@ -1,11 +1,12 @@
-const elementoLista = document.querySelector("ul")
-const elementoInput = document.querySelector("input")
-const elementoBotao = document.querySelector("button")
+const elementoLista = document.querySelector('ul');
+const elementoInput = document.querySelector('input');
+const elementoBotao = document.querySelector('button');
+const elementoBotaoLimpar = document.getElementById('limpar');
 
-const tarefas = []
+var tarefas = new Array();
 
 function mostrarTarefas() {
-    elementoLista.innerHTML = ''
+    elementoLista.innerHTML = '';
 
     for (tarefa of tarefas) {
         const elementoTarefa = document.createElement('li');
@@ -30,11 +31,17 @@ function mostrarTarefas() {
         elementoTarefa.appendChild(elementoDiv);
         elementoTarefa.appendChild(elementoLink);
         elementoLista.appendChild(elementoTarefa);
-        elementoInput.focus();
+        elementoInput.focus();        
     }
 }
 
-mostrarTarefas()
+elementoBotaoLimpar.setAttribute('onclick', 'deletaTarefas()')
+
+function deletaTarefas(){
+    tarefas = new Array();
+    mostrarTarefas();
+}
+
 
 function addTarefas() {
     const textoTarefa = elementoInput.value
